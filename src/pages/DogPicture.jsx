@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/picture-page.css';
-import '../styles/media-queries.css';
+
 
 class DogPicture extends Component {
   constructor(props) {

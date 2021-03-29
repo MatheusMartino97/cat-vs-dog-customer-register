@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/media-queries.css'
 
 class CatPicture extends Component {
   constructor(props) {

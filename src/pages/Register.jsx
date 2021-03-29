@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import registerCustomerAction from '../actions';
 import { connect } from 'react-redux';
-import '../styles/form.css';
 
 class Register extends Component {
   constructor(props) {

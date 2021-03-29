@@ -48,7 +48,6 @@ footer {
   bottom: 0;
   justify-content: center;
   align-items: center;
-
   box-shadow: black 2px 2px 10px;
 }
 
@@ -63,9 +62,166 @@ a {
   text-shadow: black 2px 2px 10px;
 }
 
-button {
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form {
+  color: yellowgreen;
+  background-color: royalblue;
+  display: inline-block;
+  width: calc(30% - 20px);
+  padding: 20px;
+  font-weight: bold;
+  text-shadow: black 2px 2px 10px;
   box-shadow: black 2px 2px 10px;
 }
+
+fieldset {
+  margin: 0;
+}
+
+label {
+  display: block;
+}
+
+input,
+select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+legend {
+  font-weight: bolder;
+}
+
+button {
+  outline: none;
+  border: none;
+  color: royalblue;
+  background-color: yellowgreen;
+  width: 100%;
+  padding: 20px;
+  font-weight: bolder;
+  font-size: 100%;
+  cursor: pointer;
+  transition: 0.5s;
+  text-shadow: white 2px 2px 2px;
+  box-shadow: black 2px 2px 10px;
+}
+
+button:hover {
+  color: yellowgreen;
+  background-color: royalblue;
+
+  text-shadow: black 2px 2px 2px;
+}
+
+
+#customer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.customer {
+  color: yellowgreen;
+  background-color: blue;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+span {
+  margin: 0 10px;
+  font-weight: bolder;
+  text-shadow: black 2px 2px 10px;
+}
+
+#home-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#home-links a {
+  padding: 20px;
+  border-radius: 20px 20px 100% 100%;
+  transition: 0.5s;
+  color: yellowgreen;
+  background-color: royalblue;
+  box-shadow: black 2px 2px 10px;
+}
+
+#home-links a:hover {
+  border-radius: 100% 100% 20px 20px;
+  color: royalblue;
+  background-color: yellowgreen;
+}
+
+img {
+  width: calc(30% - 20px);
+  height: 50vh;
+  border: 1px solid black;
+  padding: 10px;
+  background: linear-gradient(45deg, yellowgreen, blue, yellowgreen);
+}
+
+button.result-page-btn {
+  width: 30%;
+}
+
+body {
+  margin-bottom: 10vh;
+}
+
+@media screen and (max-width: 786px) {
+  body {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  img, form {
+    width: calc(70% - 20px);
+  }
+
+  button.result-page-btn {
+    width: 70%;
+  }
+
+  nav #home-links {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    align-items: center;
+  }
+
+  h1 {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    background-image: url("https://www.wallpapertip.com/wmimgs/85-854075_cat-and-dog-vertical.jpg");
+  }
+
+  img, form {
+    width: calc(95% - 20px);
+  }
+
+  button.result-page-btn {
+    width: 95%;
+  }
+
+  .customer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
