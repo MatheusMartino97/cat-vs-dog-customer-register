@@ -1,0 +1,22 @@
+img {
+  width: calc(30% - 20px);
+  height: 50vh;
+  border: 1px solid black;
+  padding: 10px;
+  background: linear-gradient(45deg, yellowgreen, blue, yellowgreen);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button.result-page-btn {
+  width: 30%;
+}
+
+body {
+  margin-bottom: 10vh;
+}
+
