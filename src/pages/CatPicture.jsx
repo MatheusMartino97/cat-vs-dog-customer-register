@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/media-queries.css'
 
 class CatPicture extends Component {
   constructor(props) {
@@ -10,14 +11,14 @@ class CatPicture extends Component {
       isLoading: false,
     };
 
-    this.fetchRandomDogPicture = this.fetchRandomDogPicture.bind(this);
+    this.fetchRandomCatPicture = this.fetchRandomCatPicture.bind(this);
   }
 
   componentDidMount() {
-    this.fetchRandomDogPicture();
+    this.fetchRandomCatPicture();
   }
 
-  async fetchRandomDogPicture() {
+  async fetchRandomCatPicture() {
     this.setState({
       isLoading: true,
     });
@@ -50,7 +51,8 @@ class CatPicture extends Component {
           ) : (
             <img src={this.state.catPictureURL} alt="cat" />
           )}
-          <button className="result-page-btn" onClick={this.fetchRandomDogPicture}>
+          <br/>
+          <button className="result-page-btn" onClick={this.fetchRandomCatPicture}>
             Buscar outra foto
           </button>
         </main>

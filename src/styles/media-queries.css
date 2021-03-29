@@ -37,4 +37,9 @@
   button.result-page-btn {
     width: 95%;
   }
+
+  .customer {
+    display: flex;
+    flex-direction: column;
+  }
 }

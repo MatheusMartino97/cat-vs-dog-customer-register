@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import '../styles/customers.css'
+import '../styles/customers.css';
+import '../styles/media-queries.css';
 
 class Customers extends Component {
   render() {
@@ -18,15 +19,13 @@ class Customers extends Component {
             <div id="customers-container">
               {customersList.map((customer, index) => {
                 return (
-                  <div>
-                    <div className="customer" key={index}>
-                      <span>
-                        Usuário: <em>{customer.email}</em>
-                      </span>
-                      <span>
-                        Senha: <em>{customer.password}</em>
-                      </span>
-                    </div>
+                  <div className="customer" key={index}>
+                    <span>
+                      Usuário: <em>{customer.email}</em>
+                    </span>
+                    <span>
+                      Senha: <em>{customer.password}</em>
+                    </span>
                   </div>
                 );
               })}
