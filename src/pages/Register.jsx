@@ -67,6 +67,7 @@ class Register extends Component {
       this.setState({
         email: '',
         password: '',
+        animal: 'none',
       });
     } else {
       window.alert('Favor escolher um animal');
@@ -119,7 +120,7 @@ class Register extends Component {
               <label htmlFor="animail">
                 Você prefere:
                 <br/>
-                <select name="aminal-select" id="animal">
+                <select value={this.state.animal} name="aminal-select" id="animal">
                   <option value="none">Opções</option>
                   <option value="dog">Cachorro</option>
                   <option value="cat">Gato</option>
